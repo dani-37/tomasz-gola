@@ -22,3 +22,14 @@ html {
   src: url(../fonts/aptos-bold.ttf) format('truetype');
   font-weight: bold;
 }
+
+.thing-enter {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.thing-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 500ms, transform 500ms;
+}

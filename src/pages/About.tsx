@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Stack, CardMedia} from '@mui/material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import './bg.css'
+import './global.css'
 
 const About = () => {
     const imagePath = require(`./images/julia.webp`);

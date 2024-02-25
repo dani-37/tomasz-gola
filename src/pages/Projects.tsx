@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {Box, Stack, CardMedia} from '@mui/material';
-import './bg.css'
+import { useInView } from 'react-intersection-observer';
+import './global.css'
 
 import lambert from './images/lambert.webp'
 import ddd from './images/ddd.webp'
 import drag from './images/drag.webp'
 import language from './images/language.webp'
-import sounds from './images/sounds.webp'
+import newonce from './images/newonce_p.webp'
 import punk from './images/punk.webp'
 
 
@@ -19,10 +20,14 @@ interface projProps {
 }
 
 const Proj: React.FC<projProps> = ({ title, description, image, link }) => {
-    return(
-        <Link to={`./blog/${link}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+    const { ref, inView } = useInView({
+        triggerOnce: true, 
+        rootMargin: '0px 0px', // Start the animation when the element is 100px into the viewport
+    });
+    return (
+        <Link to={`./blog/${link}`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
             <Box className='font-aptos font-thin' sx={{
-                width: '100%', position: 'relative', 
+                width: {xs:'85%', sm:'100%'}, position: 'relative', 
                 '&:hover': {
                     cursor: 'pointer',
                     '& .image-overlay': {display: 'flex', flexDirection: 'column', alignItems: 'center', 
@@ -57,7 +62,7 @@ const Projects = () => {
             Projects
         </header>
 
-        <Stack direction={{sm:'row', xs:'column'}} sx={{pt:4, pb:2.5, mr:{xs:'10%', sm:0}}} spacing={2.5}>
+        <Stack direction={{sm:'row', xs:'column'}} sx={{pt:4, pb:2.5, mr:{xs:'10%', sm:0}, justifyContent:'space-between'}} spacing={2.5}>
             <Proj title='The Lambert'
                     description='Graphic design project for an online magazine'
                     image={lambert}
@@ -69,8 +74,8 @@ const Projects = () => {
                   link = 'punk'/>
         
             <Proj title='newonce'
-                    description='Islington Radio show highlighting female voices in music'
-                    image={sounds}
+                    description='Media platform focusing on music, lifestyle and urban culture'
+                    image={newonce}
                     link = 'newonce'/>
 
         </Stack>
@@ -86,12 +91,11 @@ const Projects = () => {
                     image={drag}
                     link = 'drag'/>
             
-            <Proj title='The DotDotDot Podcast'
+            <Proj title='The Dot Dot Dot Podcast'
                 description='Breaking down pop culture and media phenomena'
                 image={ddd}
                 link = 'ddd'/>
             
-
         </Stack>
         </>
     );

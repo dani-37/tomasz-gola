@@ -1,7 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import './bg.css'
-import './timeline.css'
+import './global.css'
 
 
 import embassy from './images/embassy.webp'
@@ -23,7 +22,7 @@ interface ThingProps {
 const Thing: React.FC<ThingProps> = ({ intro, title, description, image, last=false }) => {
     const { ref, inView } = useInView({
         triggerOnce: true, 
-        rootMargin: '0px 0px', // Start the animation when the element is 100px into the viewport
+        rootMargin: '0px 0px', 
     });
     return (
         <div ref={ref} className={`${last ? 'pb-0' : 'pb-10'} ml-3 flex flex-col md:flex-row items-start transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>

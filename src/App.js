@@ -1,9 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import NavBar from './NavBar.tsx';
-import './index.css';
-import './fonts.css';
 
 import Lambert from './pages/blog/Lambert.tsx'
 import DotDotDot from './pages/blog/DotDotDot.tsx';
@@ -20,7 +18,7 @@ function App() {
         <NavBar />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} /> 
+            <Route path="/" element={<Home />} />
             <Route path="/blog/lambert" element={<Lambert />} />
             <Route path="/blog/ddd" element={<DotDotDot />} />
             <Route path="/blog/language" element={<Language />} />

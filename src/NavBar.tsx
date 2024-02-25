@@ -2,7 +2,7 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import { useLocation } from 'react-router-dom';
-import './index.css';
+import './fonts.css';
 
 const NavBar = () => {
     const location = useLocation(); 
@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
         <div className="bg-w sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-[5%] md:px-20 lg:px-40">
+            <div className="max-w-7xl mx-auto px-[5%] md:px-20 lg:px-40 2xl:px-10">
                 <div className="flex items-center justify-between w-full"> 
                     <div className="py-4"> 
                         <Link smooth to="/#about" className="text-3xl font-bold text-gray-900 font-aptos">Julia Oprzondek</Link> 
