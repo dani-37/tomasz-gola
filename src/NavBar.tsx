@@ -31,10 +31,10 @@ const NavBar = () => {
             {/* Side dots */}
             {!isBlogPage && (
                 <div className="fixed top-1/2 right-6 transform -translate-y-1/2 lg:flex lg:flex-col">
-                    <Link smooth to="/#about" className="block w-2.5 h-2.5 mb-3 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
-                    <Link smooth to="/#projects" className="block w-2.5 h-2.5 mb-3 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
-                    <Link smooth to="/#experience" className="block w-2.5 h-2.5 mb-3 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
-                    <Link smooth to="/#contact" className="block w-2.5 h-2.5 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
+                    <Link smooth to="/#about" className="block  w-4 h-4 sm:w-2.5 sm:h-2.5 mb-4 sm:mb-3 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
+                    <Link smooth to="/#projects" className="block w-4 h-4 sm:w-2.5 sm:h-2.5 mb-4 sm:mb-3 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
+                    <Link smooth to="/#experience" className="block w-4 h-4 sm:w-2.5 sm:h-2.5 mb-4 sm:mb-3 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
+                    <Link smooth to="/#contact" className="block w-4 h-4 sm:w-2.5 sm:h-2.5 border-2 border-gray-400 rounded-full hover:border-gray-500 transition duration-500"></Link>
                 </div>
             )}
         </div>
