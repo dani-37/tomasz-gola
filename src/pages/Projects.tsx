@@ -27,7 +27,7 @@ const Proj: React.FC<projProps> = ({ title, description, image, link }) => {
     return (
         <Link to={`./blog/${link}`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
             <Box className='font-aptos font-thin' sx={{
-                width: {xs:'85%', sm:'100%'}, position: 'relative', 
+                width: '100%', position: 'relative', 
                 '&:hover': {
                     cursor: 'pointer',
                     '& .image-overlay': {display: 'flex', flexDirection: 'column', alignItems: 'center', 
