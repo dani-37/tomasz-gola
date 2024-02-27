@@ -22,13 +22,13 @@ const Content = () => (
             Apart from the initial adoration for fashion and music, the late 1970s were filled with resistance and discontent about the surrounding world. According to a survey conducted by Fifty magazine on subcultures and their impact on people’s lives, 17% of respondents said they sought political allies by joining a community.
         </p>
         <p>
-            By the end of the decade, punk had transformed into a socio-political movement. John Addison, 55, admits that for him it was very much a political stance. “At gatherings, there were leaflets full of information that encouraged action. Also, punk music itself had a strong political subtext,” he says.  “I liked to analyse lyrics, so that also got me more into politics.”
+            By the end of the decade, punk had transformed into a socio-political movement. John Addison, 55, admits that for him it was very much a political stance. “At gatherings, there were leaflets full of information that encouraged action. Also, punk music itself had a strong political subtext,” he says. “I liked to analyse lyrics, so that also got me more into politics.”
         </p>
         <p>
             Punk thrived throughout the 1970s and later split up into various genres, like new wave, Oi! or new romantic. But did the intense belonging to the first rush of punk have an impact on its members' later lives?
         </p>
         <p>
-            Survey respondents agree on what has been (and continues to be) influenced the most. An overwhelming 34% said their social life flourishes to this day thanks to the scene they joined. Surprisingly though, professional and academic lives placed second and third, respectively. Paul is  a fitting example of that. Nowadays, he is a Professor of Cultural Studies at the University of Bolton and admits it was punk that led him into that professional direction.
+            Survey respondents agree on what has been (and continues to be) influenced the most. An overwhelming 34% said their social life flourishes to this day thanks to the scene they joined. Surprisingly though, professional and academic lives placed second and third, respectively. Paul is a fitting example of that. Nowadays, he is a Professor of Cultural Studies at the University of Bolton and admits it was punk that led him into that professional direction.
         </p>
         <p>
             “I have been in academia for a long time. Some years ago, perhaps a little less now, it allowed you to express your concerns by writing papers or doing research,” he says. “So, in terms of my career, I joined an area where I had a voice; and that was the message that punk was always trying to convey.”
@@ -73,7 +73,7 @@ const Description = () => (
         In 2018, for one of my final classes at City, I worked on a magazine supposed to answer to a niche in the market. Eventually, with my team, we decided to target people in their fifties with a magazine (fittingly) titled Fifty.  
         </p>
         <p className='font-aptos font-thin text-sm'>
-        It featured one of my investigative features about former punk fans and where they are now. My conversations with several interviewees went beyond one music genre, though; their focal point was the value of subcultures for their communities. 
+        Amongst others, it featured one of my investigative features about former punk fans and where they are now. My conversations with several interviewees went beyond one music genre, though; their focal point was the value of subcultures for their communities. 
         </p>
         <p className='font-aptos font-thin text-sm -mb-8'>
         After finding most interviewees online, it was wonderful to have total strangers open up to me about some of the most formative years of their lives and see where their journey took them. 

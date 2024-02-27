@@ -51,7 +51,7 @@ const Description = () => (
         newonce is a media platform born out of an organic passion for urban culture. It documents and comments on the surrounding reality and social dynamics through the prism of pop culture or lifestyle. 
         </p>
         <p className='font-aptos font-thin text-sm'>
-        I worked in their department overlooking newonce.club, its subscription service. Apart from my work on the club and managing its community, I got to do some ad hoc, unexpected projects like recording a promotional jingle for the radio. You can listen to it and see some of the promotional materials I worked on below - sorry it’s in Polish!
+        I worked in their department overlooking newonce.club, its subscription service. Apart from my work on branded communications, collaborations with external partners, and managing the club’s community, I got to do some ad hoc, unexpected projects like recording a promotional jingle for the radio. You can listen to it and see some of the promotional materials I worked on below - sorry it’s in Polish!
         </p>
     </>
 )

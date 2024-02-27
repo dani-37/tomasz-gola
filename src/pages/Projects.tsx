@@ -24,6 +24,7 @@ const Proj: React.FC<projProps> = ({ title, description, image, link }) => {
         triggerOnce: true, 
         rootMargin: '0px 0px', // Start the animation when the element is 100px into the viewport
     });
+
     return (
         <Link to={`./blog/${link}`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
             <Box className='font-aptos font-thin' sx={{
@@ -48,6 +49,11 @@ const Proj: React.FC<projProps> = ({ title, description, image, link }) => {
                     <p className='font-aptos font-thin text-sm px-6'>
                         {description}
                     </p>
+                    <div className="justify-center">
+                        <Box  sx={{ border:1, px:2, fontSize:'0.8rem', borderRadius:'4px'}}>
+                            READ MORE
+                        </Box>
+                    </div>
                 </div> 
             </Box>
         </Link>

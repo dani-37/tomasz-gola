@@ -31,13 +31,13 @@ const Content = () => (
 const Description = () => (
     <>
         <p className='font-aptos font-thin text-sm'>
-        The Dot Dot Dot was a podcast about pop culture, including the music, film, and other creative industries, and aired weekly on Radio Bocconi. It is now available on Spotify.        
+        The Dot Dot Dot was a podcast about pop culture, including the music, film, and other creative industries, and aired weekly on Radio Bocconi. It is now available on Spotify.
         </p>
         <p className='font-aptos font-thin text-sm'>
-        This project was born out of actual conversations with my friends and us wanting to share our goofy thoughts with friends who were not based in Milan. And what started as a side gig, later began to occupy most of our free time with planning and researching. I loved having a passion project and have since always looked for something where I could express myself, on the side of my daily responsibilities.         
+        This podcast was born out of actual conversations with my friends and us wanting to share our goofy thoughts with friends who were not based in Milan. And what started as a side project, later began to occupy the majority of my free time with planning and researching. I loved having a passion project and have since always looked for something where I could express myself, alongside my daily responsibilities. 
         </p>
         <p className='font-aptos font-thin text-sm -mb-8'>
-        At the DDD, I took on the role of editor, researcher, and host. Having such a project, alongside my studies and work at newonce, was sometimes a challenge but I definitely preferred (and still do) having much to do. And seeing a whole season of 10 episodes out on Spotify was very rewarding and definitely made it worth it!         
+        At the DDD, I took on the role of editor, researcher, and host. Having such a project, alongside my studies and work at newonce, was sometimes a challenge but I definitely preferred (and still do) having much to do. And seeing a whole season of 10 episodes out on Spotify was very rewarding and definitely made it worth it! 
         </p>
     </>
 )

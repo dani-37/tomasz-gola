@@ -62,13 +62,13 @@ const Content = () => (
 const Description = () => (
     <>
         <p className='font-aptos font-thin text-sm'>
-        While at the Embassy, I worked on a social media campaign, promoting the Polish language and the benefits of learning it for your career, social relationships, and personal development. 
+        While at the Embassy, I worked on a social media campaign promoting the Polish language and the benefits of learning it for social relationships, career, and personal development. 
         </p>
         <p className='font-aptos font-thin text-sm'>
-        It was six weeks long and included long and short-form videos, as well as infographics. Throughout its run, it achieved an organic reach of 380,000 (including views, reactions, and shares) between Facebook and X. 
+        It was six weeks long and included long and short-form videos, as well as infographics. Throughout its run, it achieved an organic reach of 400,000 (including views, reactions, and shares) between Facebook and X. 
         </p>
         <p className='font-aptos font-thin text-sm -mb-10'>
-        While working on it, we got to look for vintage pictures in the Polish National Digital Archives, which I found fascinating. Going through photos of normal people living in communist times while making a campaign for the contemporary audience was surprisingly emotional; as a Pole living in the UK, the search brought forth thoughts about how much Poland has since changed, how different our lives are, and how many opportunities we now have. 
+        While working on it, we got to look for vintage pictures in the Polish National Digital Archives, which I found fascinating. Going through photos of normal people living in communist times while making a campaign for the contemporary audience was surprisingly emotional. As a Pole living in the UK, the search brought forth thoughts about how much Poland has since changed, how different our lives are, and how many opportunities we now have. 
         </p>
     </>
 )

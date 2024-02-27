@@ -78,13 +78,13 @@ const Content = () => (
 const Description = () => (
     <>
         <p className='font-aptos font-thin text-sm'>
-            A profile of London Ian McGill, known professionally as London Lestrange. Based in Richmond, Virginia, he told me of the impact of drag culture and gaining confidence in his craft. 
+        A profile of London Ian McGill, known professionally as London Lestrange. He is based in Richmond, Virginia, and told me about the local drag culture and how he gained confidence in his craft. 
         </p>
         <p className='font-aptos font-thin text-sm'>
-            It was one of my favourite pieces because I got to explore a topic that I was personally interested in. Having watched many drag shows, I knew how much work goes into the costumes, gigs, and their stage presence. 
+        It was one of my favourite pieces because I got to explore a topic that I was personally interested in. Having watched many drag shows, I knew how much work goes into the costumes, gigs, and their stage presence. 
         </p>
         <p className='font-aptos font-thin text-sm -mb-8'>
-            That is exactly why I chose to write about it for my Feature Writing class in my second year of university. With RuPaul’s Drag Race coming to the UK in 2019, I wanted to bring the drag craft to the readers and shed a spotlight on the dedication required from the performers. 
+        That is exactly why I chose to write about it for my Feature Writing class in my second year of university. With RuPaul’s Drag Race coming to the UK in 2019, I wanted to bring the drag craft to the readers and shed a spotlight on the dedication required from the performers. 
         </p>
     </>
 )
