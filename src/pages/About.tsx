@@ -4,18 +4,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './global.css'
 
 const About = () => {
-    const imagePath = require(`./images/julia.webp`);
         return (
             <>
-            <head>
-                <link rel="preload" href={imagePath} as="image" type="image/webp" />
-            </head>
             <div className="font-aptos w-full pt-[5%] xs:pt-5 pr-[10%] xs:pr-0 sm:pr-0 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12">
                 
-                <div className="w-full overflow-hidden max-h-[300px] sm:max-h-[420px] rounded-[4px]">
+                <div className="w-full overflow-hidden max-h-[300px] sm:max-h-[430px] rounded-[4px]">
                     <img 
                         className="w-full"
-                        src={imagePath} 
+                        src="/julia.webp"
                         alt="Hi! It me, Julia"
                     />
                 </div>
@@ -25,7 +21,7 @@ const About = () => {
                         I tell impactful stories through digital media
                     </header>
 
-                    <body className='font-thin text-sm'>
+                    <div className='font-thin text-sm'>
                         <p className="pb-5">
                             Hi! I'm Julia. I have always been fascinated by different media and how they can be used to enhance the stories they present. In my jobs and passion projects, I have long been trying to learn about as many media forms as I can to get a thorough overview of what can be done. 
                         </p>
@@ -40,14 +36,14 @@ const About = () => {
             
                         <div className="flex flex-row space-x-1">
                         <a href="https://www.linkedin.com/in/juliaoprzondek/" target='_blank' rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                            <LinkedInIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
+                            <LinkedInIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', mr:0.5, cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
                         </a>
 
                         <a href="mailto:oprzondek.julia@gmail.com" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                             <AlternateEmailIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
                         </a>
                         </div>
-                    </body>
+                    </div>
 
                 </div>
         
