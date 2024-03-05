@@ -11,20 +11,12 @@ import newonce from './images/newonce_p.webp'
 import punk from './images/punk.webp'
 
 
-interface projProps {
-    title: string,
-    description: string,
-    image: string,
-    link: string,
-}
-
 const Proj = ({ title, description, image, link }) => {
     const { ref, inView } = useInView({
         triggerOnce: true,
-        rootMargin: '0px 0px', // Start the animation when the element is visible
+        rootMargin: '0px 0px', 
     });
     
-
     return (
         <Link to={`./blog/${link}`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
             <div className="relative font-aptos w-full cursor-pointer group overflow-hidden rounded-[4px]">

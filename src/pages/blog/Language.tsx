@@ -1,5 +1,5 @@
 import React from 'react';
-import {Stack, Box, CardMedia} from '@mui/material';
+import {Stack, CardMedia} from '@mui/material';
 import BlogPost from './Template.tsx'
 import './blog.css'
 
@@ -55,6 +55,7 @@ const Content = () => (
                     src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPolishEmbassyUK%2Fvideos%2F1561465191289450%2F&show_text=false&width=560&t=0"
                     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
                     allowFullScreen={false}
+                    title='Facebook video'
                 />
             </div>
             <CardMedia

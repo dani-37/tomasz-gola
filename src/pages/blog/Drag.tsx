@@ -5,7 +5,7 @@ import './blog.css'
 
 const Content = () => (
     <>
-        <Box className='mt-10 sm:max-w-[70%] sm:mx-auto' sx={{align:'center'}}>
+    <Box className='mt-10 sm:max-w-[70%] sm:mx-auto' sx={{align:'center'}}>
         <header className='mb-10 text-[1.4rem] text-center font-bold'>
             "Gay men are opinionated. Drag queens are opinionated. Artists are opinionated. 
             Put it all together, it’s like a ticking bomb."
