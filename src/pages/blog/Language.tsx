@@ -49,13 +49,20 @@ const Content = () => (
                 image={b3}
             />
         </Stack>
-        <Box sx={{justifyContent:'center', display:'flex', py:2.5}}>
-        <CardMedia
+        <Stack sx={{display:'flex', alignItems:'center', py:2.5}} spacing={2.5}>
+            <div className="w-full sm:w-3/5 relative pb-[56%] sm:pb-[34%]"> 
+                <iframe 
+                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPolishEmbassyUK%2Fvideos%2F1561465191289450%2F&show_text=false&width=560&t=0"
+                    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+                    allowFullScreen={false}
+                />
+            </div>
+            <CardMedia
             component="img"
             sx={{width:{sx:'100%', sm:'60%'}, borderRadius: '4px' }}
             image={c1}
             />
-        </Box>
+        </Stack>
     </div>
 )
 
@@ -73,7 +80,7 @@ const Description = () => (
     </>
 )
 
-const Drag = () => {
+const Language = () => {
     return(<BlogPost title='Polish language campaign' 
                      description={<Description/>}
                      image='language'
@@ -82,4 +89,4 @@ const Drag = () => {
             )
 }
 
-export default Drag
+export default Language

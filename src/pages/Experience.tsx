@@ -2,14 +2,12 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import './global.css'
 
-
 import embassy from './images/embassy.webp'
 import newonce from './images/newonce.webp'
 import bocconi from './images/bocconi.webp'
 import goremote from './images/goremote.webp'
 import city from './images/city.webp'
 import penguin from './images/penguin.webp'
-
 
 interface ThingProps {
     intro:string;
@@ -53,8 +51,8 @@ const Experience = () => {
                 <div className="absolute -left-[5px] -mt-1 w-3 h-3 border-2 border-w rounded-full bg-w z-1" /> 
                 <Thing intro='Polish Embassy in London, 2023-Present'
                        title='Media and Public Diplomacy Specialist'
-                       description='In my work at the Polish Embassy, I curate, schedule, and produce content, including written and 
-                       video formats, all with our target audience of 700,000 Poles based in the UK in mind.'
+                       description='In my work at the Polish Embassy, I curate, schedule, and produce content, including 
+                       written and video formats, all with our target audience of 700,000 Poles based in the UK in mind.'
                        image={embassy} />
 
                 <Thing intro='newonce, 2021-2022'

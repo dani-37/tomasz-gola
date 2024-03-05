@@ -27,7 +27,7 @@ const Description = () => (
     </>
 )
 
-const Drag = () => {
+const Lambert = () => {
     return(<BlogPost title='The Lambert' 
                      description={<Description/>}
                      image='lambert'
@@ -36,4 +36,4 @@ const Drag = () => {
             )
 }
 
-export default Drag
+export default Lambert

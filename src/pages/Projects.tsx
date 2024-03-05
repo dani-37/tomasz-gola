@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Box, Stack, CardMedia} from '@mui/material';
 import { useInView } from 'react-intersection-observer';
 import './global.css'
 
@@ -19,92 +18,80 @@ interface projProps {
     link: string,
 }
 
-const Proj: React.FC<projProps> = ({ title, description, image, link }) => {
+const Proj = ({ title, description, image, link }) => {
     const { ref, inView } = useInView({
-        triggerOnce: true, 
-        rootMargin: '0px 0px', // Start the animation when the element is 100px into the viewport
+        triggerOnce: true,
+        rootMargin: '0px 0px', // Start the animation when the element is visible
     });
+    
 
     return (
         <Link to={`./blog/${link}`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
-            <Box className='font-aptos font-thin' sx={{
-                width: '100%', position: 'relative', 
-                '&:hover': {
-                    cursor: 'pointer',
-                    '& .image-overlay': {display: 'flex', flexDirection: 'column', alignItems: 'center', 
-                        justifyContent: 'center', position: 'absolute', top: 0, left: 0, width: '100%', 
-                        height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.7)', color: 'white', fontSize: '18px', 
-                        borderRadius: '4px', px:'10%'},
-                } }}>
-                <CardMedia
-                    component="img"
-                    sx={{ width: '100%', maxHeight: '100%', borderRadius: '4px' }}
-                    image={image}
-                    alt={title}
-                />
-                <div className="image-overlay hidden text-center" >
-                    <header className='font-aptos pb-2'>
+            <div className="relative font-aptos w-full cursor-pointer group overflow-hidden rounded-[4px]">
+                <img src={image} alt={title} className="w-full h-auto max-h-full rounded-[4px] transition-opacity ease-in-out group-hover:opacity-75" />
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 text-white text-center rounded-[4px] p-8 opacity-0 group-hover:opacity-100 flex flex-col justify-center transition-opacity duration-[150ms] ease-in-out">
+                    <header className="pb-2 text-[1.1rem]">
                         {title}
                     </header>
-                    <p className='font-aptos font-thin text-sm px-6'>
+                    <p className=" font-thin text-sm px-6">
                         {description}
                     </p>
-                    <div className="justify-center">
-                        <Box  sx={{ border:1, px:2, fontSize:'0.8rem', borderRadius:'4px'}}>
+                    <div>
+                        <div className="inline-block border border-white px-3 py-1 text-xs rounded-[4px] text-[0.7rem] font-mono hover:bg-w hover:bg-opacity-10 duration-100">
                             READ MORE
-                        </Box>
+                        </div>
                     </div>
                 </div> 
-            </Box>
+            </div>
         </Link>
-    )
-}
+    );
+};
+
+
 
 const Projects = () => {
-    
     return (
         <>
-        <header className='sm:pt-24 pt-16 font-aptos font-bold text-4xl text-w '>
-            Projects
-        </header>
+            <header className="sm:pt-24 pt-16 font-bold text-4xl text-white">
+                Projects
+            </header>
 
-        <Stack direction={{sm:'row', xs:'column'}} sx={{pt:4, pb:2.5, mr:{xs:'10%', sm:0}, justifyContent:'space-between'}} spacing={2.5}>
-            <Proj title='The Lambert'
-                    description='Graphic design project for an online magazine'
-                    image={lambert}
-                    link = 'lambert'/>
-                    
-            <Proj title='What even is punk?'
-                  description='A deep dive into punk culture and its community 50 years later'
-                  image={punk}
-                  link = 'punk'/>
-        
-            <Proj title='newonce'
-                    description='Media platform focusing on music, lifestyle and urban culture'
-                    image={newonce}
-                    link = 'newonce'/>
+            <div className="flex flex-col sm:flex-row sm:space-x-2.5 space-y-2.5 sm:space-y-0 pt-4 pb-2.5 sm:pb-2.5 mr-10% sm:mr-0 justify-between">
+                <Proj title='The Lambert'
+                      description='Graphic design project for an online magazine'
+                      image={lambert}
+                      link='lambert'/>
 
-        </Stack>
-        
-        <Stack direction={{sm:'row', xs:'column'}}  sx={{mr:{xs:'10%', sm:0}, pb:{xs:'5rem', sm:'7rem'}}} spacing={2.5}>
-            <Proj title='Polish Language Campaign'
-                description='Organic social media campaign for the Polish Embassy'
-                image={language}
-                link = 'language'/>
-        
-            <Proj title='Drag queens and social media'
-                    description='Profile of London and the evolution of drag culture'
-                    image={drag}
-                    link = 'drag'/>
-            
-            <Proj title='The Dot Dot Dot Podcast'
-                description='Breaking down pop culture and media phenomena'
-                image={ddd}
-                link = 'ddd'/>
-            
-        </Stack>
+                <Proj title='What even is punk?'
+                      description='A deep dive into punk culture and its community 50 years later'
+                      image={punk}
+                      link='punk'/>
+
+                <Proj title='newonce'
+                      description='Media platform focusing on music, lifestyle, and urban culture'
+                      image={newonce}
+                      link='newonce'/>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:space-x-2.5 space-y-2.5 sm:space-y-0 mr-10% sm:mr-0 pb-20 sm:pb-28">
+                <Proj title='Polish Language Campaign'
+                      description='Organic social media campaign for the Polish Embassy'
+                      image={language}
+                      link='language'/>
+
+                <Proj title='Drag queens and social media'
+                      description='Profile of London and the evolution of drag culture'
+                      image={drag}
+                      link='drag'/>
+
+                <Proj title='The Dot Dot Dot Podcast'
+                      description='Breaking down pop culture and media phenomena'
+                      image={ddd}
+                      link='ddd'/>
+            </div>
         </>
     );
 };
+
 
 export default Projects;

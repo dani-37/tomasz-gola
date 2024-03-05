@@ -81,7 +81,7 @@ const Description = () => (
     </>
 )
 
-const Drag = () => {
+const Punk = () => {
     return(<BlogPost title='What even is punk?' 
                      description={<Description/>}
                      image='punk'
@@ -90,4 +90,4 @@ const Drag = () => {
             )
 }
 
-export default Drag
+export default Punk

@@ -1,5 +1,6 @@
 import React from 'react';
 import './global.css'
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
