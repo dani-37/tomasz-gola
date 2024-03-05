@@ -35,11 +35,11 @@ const About = () => {
                         </p>
             
                         <div className="flex flex-row space-x-1">
-                        <a href="https://www.linkedin.com/in/juliaoprzondek/" target='_blank' rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                        <a href="https://www.linkedin.com/in/juliaoprzondek/" aria-label='Connect with me on LinkedIn' target='_blank' rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                             <LinkedInIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', mr:0.5, cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
                         </a>
 
-                        <a href="mailto:oprzondek.julia@gmail.com" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                        <a href="mailto:oprzondek.julia@gmail.com" aria-label='Drop me an email' style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                             <AlternateEmailIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
                         </a>
                         </div>

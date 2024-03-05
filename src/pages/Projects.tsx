@@ -18,7 +18,7 @@ const Proj = ({ title, description, image, link }) => {
     });
     
     return (
-        <Link to={`./blog/${link}`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
+        <Link to={`./blog/${link}`} aria-label={`Go to my ${title} article`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
             <div className="relative font-aptos w-full cursor-pointer group overflow-hidden rounded-[4px]">
                 <img src={image} alt={title} className="w-full h-auto max-h-full rounded-[4px] transition-opacity ease-in-out group-hover:opacity-75" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 text-white text-center rounded-[4px] p-8 opacity-0 group-hover:opacity-100 flex flex-col justify-center transition-opacity duration-[150ms] ease-in-out">

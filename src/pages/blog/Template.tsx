@@ -44,7 +44,7 @@ const BlogPost: React.FC<blogProps> = ({ title, description, image, content}) =>
                         </div>
                     
                         <Box sx={{display:'flex', alignItems:'flex-end', height:'1rem', pb:5}}>
-                            <Link smooth to="/#projects" className="text-sm font-bold font-aptos text-gray-900 hover:text-b transition duration-300">
+                            <Link smooth to="/#projects" aria-label="Back to Projects" className="text-sm font-bold font-aptos text-gray-900 hover:text-b transition duration-300">
                                 • Back to Projects
                             </Link>
                         </Box>

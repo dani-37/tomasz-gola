@@ -32,7 +32,7 @@ export default function HomePage() {
               <Contact/>
               <div className="abslute pr-[10%] sm:pr-0 text-sm mx-auto text-right text-w font-aptos">
                 Website by   
-                <a href="https://www.linkedin.com/in/dvegarabalsa/" target="_blank" rel="noopener noreferrer" className="font-bold pl-1">
+                <a href="https://www.linkedin.com/in/dvegarabalsa/" aria-label='LinkedIn page of the web developer' target="_blank" rel="noopener noreferrer" className="font-bold pl-1">
                      Daniel Vegara
                 </a>
               </div>
