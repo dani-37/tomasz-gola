@@ -23,7 +23,7 @@ const About = () => {
 
                     <div className='font-thin text-sm'>
                         <p className="pb-5">
-                            Hi! I'm Julia. I have always been fascinated by different media and how they can be used to enhance the stories they present. In my jobs and passion projects, I have long been trying to learn about as many media forms as I can to get a thorough overview of what can be done. 
+                            Hi! I'm Julia. I have always been fascinated by different media and how they can be used to enhance the stories they present. In my jobs and passion projects, I have long been trying to learn about as many media forms as I can — to get a thorough overview of what can be done. 
                         </p>
             
                         <p className="pb-5">
@@ -31,7 +31,7 @@ const About = () => {
                         </p>
             
                         <p className="pb-0">
-                            Driven by a desire to inspire and connect through impactful narratives, I want to make a significant mark on the creative field and share stories that I need to be shared. I am particularly interested in gender equality, climate change action, access to education, and equal representation.
+                            My goal is to one day be in a position that would allow me to create projects and campaigns about important world issues through art, music, the written word, and emerging media. I am particularly interested in gender equality, climate change action, access to education, and equal representation. Combining those with my love for art and culture would be a dream.
                         </p>
             
                         <div className="flex flex-row space-x-1">

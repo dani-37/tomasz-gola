@@ -1,11 +1,10 @@
 import React from 'react';
-import {Box} from '@mui/material';
 import BlogPost from './Template.tsx'
 import './blog.css'
 
 const Content = () => (
     <>
-    <Box className='mt-10 sm:max-w-[70%] sm:mx-auto' sx={{align:'center'}}>
+    <div className='mt-10 sm:max-w-[70%] sm:mx-auto flex flex-col items-center'>
         <header className='mb-10 text-[1.4rem] text-center font-bold'>
             "Gay men are opinionated. Drag queens are opinionated. Artists are opinionated. 
             Put it all together, it’s like a ticking bomb."
@@ -70,7 +69,7 @@ const Content = () => (
             exhausted. There are days when it’s a real, real job. But for the most part, it’s a pretty good
             time.”
         </p>
-    </Box>
+    </div>
     </>
 )
 

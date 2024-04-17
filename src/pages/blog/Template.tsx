@@ -11,30 +11,29 @@ interface blogProps {
 
 const BlogPost: React.FC<blogProps> = ({ title, description, image, content}) => {
     const imagePath = require(`./images/${image}.webp`);
+    
     useEffect(() => {
         window.scrollTo({
             top: 0,
             behavior: 'instant' 
         });
     }, []);
+
     return (
         <div className='min-h-[calc(100vh-68px)] pb-10 md:py-10 lg:py-20 bg-w'>
             <section className="mx-auto max-w-screen-xl px-[5%] md:px-20 lg:px-40 2xl:px-10">
-                <Stack 
-                    sx={{ width: '100%', pt:{xs:5, lg:0}}}
-                    direction={{sm:'row', xs:'column'}} spacing={6}
-                    className="border-b-[2px]">
+                <div className="flex flex-col space-y-12 sm:space-y-0 sm:space-x-12 sm:flex-row border-b-[2px] w-full pt-10 sm:pt-0">
 
-                    <Box sx={{ width: '100%'}}>
+                    <div className='w-full'>
                         <CardMedia
-                        component="img"
-                        sx = {{width:'100%', maxHeight:{sm:550, xs:300}, borderRadius:'4px', mb:{sm:'4rem', xs:0}}}
-                        image= {imagePath} 
-                        alt={title}
+                            component="img"
+                            sx = {{width:'100%', maxHeight:{sm:550, xs:300}, borderRadius:'4px', mb:{sm:'4rem', xs:0}}}
+                            image= {imagePath} 
+                            alt={title}
                         />
-                    </Box>
+                    </div>
 
-                    <Box sx={{ width: '100%'}}>
+                    <div className='w-full'>
                         <header className='font-aptos text-4xl pb-4 sm:pb-10'>
                             {title}
                         </header>
@@ -48,12 +47,14 @@ const BlogPost: React.FC<blogProps> = ({ title, description, image, content}) =>
                                 • Back to Projects
                             </Link>
                         </Box>
-                    </Box>
-                </Stack>
+                    </div>
+                </div>
+
                 <div>
                     {content}
                 </div>
-                <Box className="mx-auto max-w-screen-xl px-[5%] md:px-20 lg:px-40 2xl:px-10 border-b-[2px] pt-4"/>
+
+                <div className="mx-auto max-w-screen-xl px-[5%] md:px-20 lg:px-40 2xl:px-10 border-b-[2px] pt-4"/>
             </section>
         </div>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Stack, CardMedia} from '@mui/material';
 import BlogPost from './Template.tsx'
 import './blog.css'
 
@@ -14,42 +13,18 @@ import c1 from './images/language/c1.webp'
 
 
 const Content = () => (
-    <div className='mt-10 max-w-[100%] mx-auto'>
-        <Stack  sx={{justifyContent:'center', alignItems:'center', display:'flex', pb:2.5}} direction={{sm:'row', xs:'column'}} spacing={2.5}>
-            <CardMedia
-                component="img"
-                sx={{ maxWidth:{xs:'80%', sm:'30%'}, borderRadius: '4px' }}
-                image={a1}
-            />
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'30%'}, borderRadius: '4px' }}
-                image={a2}
-            />
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'30%'}, borderRadius: '4px' }}
-                image={a3}
-            />
-        </Stack>
-        <Stack  sx={{justifyContent:'center', alignItems:'center', display:'flex'}} direction={{sm:'row', xs:'column'}} spacing={2.5}>
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'30%'}, borderRadius: '4px' }}
-                image={b1}
-            />
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'30%'}, borderRadius: '4px' }}
-                image={b2}
-            />
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'30%'}, borderRadius: '4px' }}
-                image={b3}
-            />
-        </Stack>
-        <Stack sx={{display:'flex', alignItems:'center', py:2.5}} spacing={2.5}>
+    <div className='mt-5 max-w-[100%] mx-auto'>
+        <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5 justify-center items-center mb-5'>
+            <img src={a1} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 1 of Polish Language Campaign posters" />
+            <img src={a2} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 2 of Polish Language Campaign posters"/>
+            <img src={a3} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 3 of Polish Language Campaign posters"/>
+        </div>
+        <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5 justify-center items-center mb-5'>
+            <img src={b1} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 4 of Polish Language Campaign posters"/>
+            <img src={b2} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 5 of Polish Language Campaign posters"/>
+            <img src={b3} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 6 of Polish Language Campaign posters"/>
+        </div>
+        <div className='flex items-center mb-5 space-y-5 flex-col'>
             <div className="w-full sm:w-3/5 relative pb-[56%] sm:pb-[34%]"> 
                 <iframe 
                     src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPolishEmbassyUK%2Fvideos%2F1561465191289450%2F&show_text=false&width=560&t=0"
@@ -58,12 +33,8 @@ const Content = () => (
                     title='Facebook video'
                 />
             </div>
-            <CardMedia
-            component="img"
-            sx={{width:{sx:'100%', sm:'60%'}, borderRadius: '4px' }}
-            image={c1}
-            />
-        </Stack>
+            <img src={c1} className="max-w-full sm:max-w-[60%] rounded-[4px]"  alt="Hi! If you're reading this, I hope you're having a wonderful day!"/>
+        </div>
     </div>
 )
 

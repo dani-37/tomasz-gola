@@ -1,5 +1,4 @@
 import React from 'react';
-import {Stack, CardMedia, Box} from '@mui/material';
 import BlogPost from './Template.tsx'
 
 import './blog.css'
@@ -11,37 +10,23 @@ import b2 from './images/newonce/b2.webp'
 import mp3 from './images/newonce/jingle_newonce.mp3'
 
 const Content = () => (
-    <div className='mt-10 max-w-[100%] mx-auto'>
-        <Box sx={{justifyContent:'center', display:'flex', pb:2.5}}>
+    <div className='mt-5 max-w-[100%] mx-auto'>
+        <div className='flex justify-center pb-2'>
         <audio
             src={mp3}
             controls
             />
-        </Box>
-        <Stack  sx={{justifyContent:'center', alignItems:'center', display:'flex', pb:2.5}} direction={{sm:'row', xs:'column'}} spacing={2.5}>
-            <CardMedia
-                component="img"
-                sx={{ maxWidth:{xs:'80%', sm:'40%'}, borderRadius: '4px' }}
-                image={a1}
-            />
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'40%'}, borderRadius: '4px' }}
-                image={a2}
-            />
-        </Stack>
-        <Stack  sx={{justifyContent:'center', alignItems:'center', display:'flex', pb:2.5}} direction={{sm:'row', xs:'column'}} spacing={2.5}>
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'40%'}, borderRadius: '4px' }}
-                image={b1}
-            />
-            <CardMedia
-                component="img"
-                sx={{maxWidth:{xs:'80%', sm:'40%'}, borderRadius: '4px' }}
-                image={b2}
-            />
-        </Stack>
+        </div>
+
+        <div className='flex sm:flex-row flex-col items-center justify-center sm:space-x-5 space-y-5 sm:space-y-0 mb-5 mt-2'>
+            <img src={a1} className="max-w-[80%] rounded-[4px]" alt='Example 1 of newonce projects' />
+            <img src={a2} className="max-w-[80%] rounded-[4px]" alt='Example 2 of newonce projects'/>
+        </div>
+
+        <div className='flex sm:flex-row flex-col items-center justify-center sm:space-x-5 space-y-5 sm:space-y-0 mb-5 mt-2'>
+            <img src={b1} className="max-w-[80%] rounded-[4px]" alt='Example 3 of newonce projects'/>
+            <img src={b2} className="max-w-[80%] rounded-[4px]" alt='Example 4 of newonce projects'/>
+        </div>
         
     </div>
 )

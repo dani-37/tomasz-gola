@@ -1,16 +1,12 @@
 import React from 'react';
-import {Box, CardMedia} from '@mui/material';
 import BlogPost from './Template.tsx'
 import image from './images/lambert_long.webp'
 import './blog.css'
 
 const Content = () => (
-    <Box className='mt-10 sm:max-w-[70%] sm:mx-auto' sx={{justifyContent:'center', display:'flex'}}>
-        <CardMedia
-            component="img"
-            image={image}
-            />
-    </Box>
+    <div className=' flex justify-center mt-10 sm:max-w-[70%] sm:mx-auto'>
+        <img src={image} alt="Compilation of covers from the magazine"/>
+    </div>
 )
 
 const Description = () => (

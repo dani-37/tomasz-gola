@@ -1,11 +1,10 @@
 import React from 'react';
-import {Box} from '@mui/material';
 import BlogPost from './Template.tsx'
 import './blog.css'
 
 
 const Content = () => (
-        <Box className='mt-10 sm:max-w-[70%] sm:mx-auto' sx={{align:'center'}}>
+        <div className='mt-10 sm:max-w-[70%] sm:mx-auto'>
         <header className='mb-10 text-[1.4rem] text-center font-bold'>
             Punk, growing up, and staying yourself
         </header>
@@ -63,7 +62,7 @@ const Content = () => (
         <p>
             “I would suggest stepping out of the media brainwash and thinking for yourself,” says John. “Punk is all about thinking for yourself. People wonder why we don’t grow out of it, but in reality, we grow up with it.” As one of the survey respondents concluded: “For as long as there is alterophobia, the communities within subcultures will remain important cornerstones for people’s happiness. They can save lives.”
         </p>
-    </Box>
+    </div>
 )
 
 
