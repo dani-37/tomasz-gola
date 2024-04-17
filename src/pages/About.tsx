@@ -6,7 +6,7 @@ import './global.css'
 const About = () => {
         return (
             <>
-            <div className="font-aptos w-full pt-[5%] xs:pt-5 pr-[10%] xs:pr-0 sm:pr-0 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12">
+            <div className="font-aptos w-full pt-[5%] pr-[10%] xs:pr-0 sm:pr-0 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12">
                 
                 <div className="w-full overflow-hidden max-h-[300px] sm:max-h-[430px] rounded-[4px]">
                     <img 
