@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
         <>
           <div id='about' className='md:pt-[6vh] pb-20 bg-w scroll-mt-[100px]'>
-          <section className="mx-auto max-w-screen-xl px-[5%] md:px-20 lg:px-40 2xl:px-10">
+          <section className="mx-auto max-w-screen-xl px-[5%] md:px-20 lg:px-40 2xl:px-10 min-h-[75vh]">
               <About/>
             </section>
           </div>

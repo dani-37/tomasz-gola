@@ -2,27 +2,82 @@ import React from 'react';
 import BlogPost from './Template.tsx'
 import './blog.css'
 
-import a1 from './images/language/a1.webp'
-import a2 from './images/language/a2.webp'
-import a3 from './images/language/a3.webp'
-import b1 from './images/language/b1.webp'
-import b2 from './images/language/b2.webp'
-import b3 from './images/language/b3.webp'
-import c1 from './images/language/c1.webp'
+import a1_s from './images/language/a1_s.webp'
+import a1_m from './images/language/a1_m.webp'
+import a1_l from './images/language/a1_l.webp'
 
+import a2_s from './images/language/a2_s.webp'
+import a2_m from './images/language/a2_m.webp'
+import a2_l from './images/language/a2_l.webp'
+
+import a3_s from './images/language/a3_s.webp'
+import a3_m from './images/language/a3_m.webp'
+import a3_l from './images/language/a3_l.webp'
+
+import b1_s from './images/language/b1_s.webp'
+import b1_m from './images/language/b1_m.webp'
+import b1_l from './images/language/b1_l.webp'
+
+import b2_s from './images/language/b2_s.webp'
+import b2_m from './images/language/b2_m.webp'
+import b2_l from './images/language/b2_l.webp'
+
+import b3_s from './images/language/b3_s.webp'
+import b3_m from './images/language/b3_m.webp'
+import b3_l from './images/language/b3_l.webp'
+
+import c1_s from './images/language/c1_s.webp'
+import c1_m from './images/language/c1_m.webp'
+import c1_l from './images/language/c1_l.webp'
 
 
 const Content = () => (
     <div className='mt-5 max-w-[100%] mx-auto'>
         <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5 justify-center items-center mb-5'>
-            <img src={a1} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 1 of Polish Language Campaign posters" />
-            <img src={a2} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 2 of Polish Language Campaign posters"/>
-            <img src={a3} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 3 of Polish Language Campaign posters"/>
+        <picture>
+            <source srcSet={a1_l} media="(min-width: 900px)" />
+            <source srcSet={a1_m} media="(min-width: 500px)" />
+            <source srcSet={a1_s} media="(max-width: 499px)" />
+            <img src={a1_m} alt="Frame 1 of Polish Language Campaign posters" className="w-full rounded-[4px]" />
+        </picture>
+
+        <picture>
+            <source srcSet={a2_l} media="(min-width: 900px)" />
+            <source srcSet={a2_m} media="(min-width: 500px)" />
+            <source srcSet={a2_s} media="(max-width: 499px)" />
+            <img src={a2_m} alt="Frame 2 of Polish Language Campaign posters" className="w-full rounded-[4px]" />
+        </picture>
+
+        <picture>
+            <source srcSet={a3_l} media="(min-width: 900px)" />
+            <source srcSet={a3_m} media="(min-width: 500px)" />
+            <source srcSet={a3_s} media="(max-width: 499px)" />
+            <img src={a3_m} alt="Frame 3 of Polish Language Campaign posters" className="w-full rounded-[4px]" />
+        </picture>
         </div>
+
         <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5 justify-center items-center mb-5'>
-            <img src={b1} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 4 of Polish Language Campaign posters"/>
-            <img src={b2} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 5 of Polish Language Campaign posters"/>
-            <img src={b3} className="max-w-[80%] sm:max-w-[30%] rounded-[4px]" alt="Frame 6 of Polish Language Campaign posters"/>
+        <picture>
+            <source srcSet={b1_l} media="(min-width: 900px)" />
+            <source srcSet={b1_m} media="(min-width: 500px)" />
+            <source srcSet={b1_s} media="(max-width: 499px)" />
+            <img src={b1_m} alt="Frame 4 of Polish Language Campaign posters" className="w-full rounded-[4px]" />
+        </picture>
+
+        <picture>
+            <source srcSet={b2_l} media="(min-width: 900px)" />
+            <source srcSet={b2_m} media="(min-width: 500px)" />
+            <source srcSet={b2_s} media="(max-width: 499px)" />
+            <img src={b2_m} alt="Frame 5 of Polish Language Campaign posters" className="w-full rounded-[4px]" />
+        </picture>
+
+        <picture>
+            <source srcSet={b3_l} media="(min-width: 900px)" />
+            <source srcSet={b3_m} media="(min-width: 500px)" />
+            <source srcSet={b3_s} media="(max-width: 499px)" />
+            <img src={b3_m} alt="Frame 6 of Polish Language Campaign posters" className="w-full rounded-[4px]" />
+        </picture>
+
         </div>
         <div className='flex items-center mb-5 space-y-5 flex-col'>
             <div className="w-full sm:w-3/5 relative pb-[56%] sm:pb-[34%]"> 
@@ -33,7 +88,12 @@ const Content = () => (
                     title='Facebook video'
                 />
             </div>
-            <img src={c1} className="max-w-full sm:max-w-[60%] rounded-[4px]"  alt="Hi! If you're reading this, I hope you're having a wonderful day!"/>
+            <picture className='w-full flex justify-center'>
+                <source srcSet={c1_l} media="(min-width: 1200px)" />
+                <source srcSet={c1_m} media="(min-width: 500px)" />
+                <source srcSet={c1_s} media="(max-width: 499px)" />
+                <img src={c1_m} alt="Hi! If you're reading this, I hope you're having a wonderful day!" className="w-full sm:max-w-[60%] rounded-[4px]" />
+            </picture>
         </div>
     </div>
 )

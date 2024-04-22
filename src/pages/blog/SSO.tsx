@@ -33,7 +33,7 @@ const Description = () => (
 const DotDotDot = () => {
     return(<BlogPost title='She Sounds Off' 
                      description={<Description/>}
-                     image='SSO'
+                     image='sso'
                      content={<Content/>}
                      />
             )

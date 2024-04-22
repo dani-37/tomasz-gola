@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import {Box, Stack, CardMedia} from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link';
 
-interface blogProps {
+type blogProps = {
     title: string,
     description: any,
     image: string,
@@ -10,7 +9,9 @@ interface blogProps {
 }
 
 const BlogPost: React.FC<blogProps> = ({ title, description, image, content}) => {
-    const imagePath = require(`./images/${image}.webp`);
+    const img_s = require(`./images/${image}_s.webp`);
+    const img_m = require(`./images/${image}_m.webp`);
+    const img_l = require(`./images/${image}_l.webp`);
     
     useEffect(() => {
         window.scrollTo({
@@ -24,13 +25,13 @@ const BlogPost: React.FC<blogProps> = ({ title, description, image, content}) =>
             <section className="mx-auto max-w-screen-xl px-[5%] md:px-20 lg:px-40 2xl:px-10">
                 <div className="flex flex-col space-y-12 sm:space-y-0 sm:space-x-12 sm:flex-row border-b-[2px] w-full pt-10 sm:pt-0">
 
-                    <div className='w-full'>
-                        <CardMedia
-                            component="img"
-                            sx = {{width:'100%', maxHeight:{sm:550, xs:300}, borderRadius:'4px', mb:{sm:'4rem', xs:0}}}
-                            image= {imagePath} 
-                            alt={title}
-                        />
+                    <div className='w-full max-h-[300px] sm:max-h-[550px] rounded-[4px] mb-[4rem]'>
+                        <picture>
+                            <source srcSet={img_l} media="(min-width: 1200px)" />
+                            <source srcSet={img_m} media="(min-width: 768px)" />
+                            <source srcSet={img_s} media="(max-width: 767px)" />
+                            <img src={img_m} alt={title} className="w-full h-auto max-h-full rounded-[4px] transition-opacity ease-in-out group-hover:opacity-75" />
+                        </picture>
                     </div>
 
                     <div className='w-full'>
@@ -41,12 +42,12 @@ const BlogPost: React.FC<blogProps> = ({ title, description, image, content}) =>
                         <div className='font-aptos font-thin text-sm pb-16'>
                             {description}
                         </div>
-                    
-                        <Box sx={{display:'flex', alignItems:'flex-end', height:'1rem', pb:5}}>
+
+                        <div className='flex items-end h-[1rem] pb-8'>
                             <Link smooth to="/#projects" aria-label="Back to Projects" className="text-sm font-bold font-aptos text-gray-900 hover:text-b transition duration-300">
                                 • Back to Projects
                             </Link>
-                        </Box>
+                        </div>
                     </div>
                 </div>
 

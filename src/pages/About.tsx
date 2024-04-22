@@ -9,11 +9,12 @@ const About = () => {
             <div className="font-aptos w-full pt-[5%] pr-[10%] xs:pr-0 sm:pr-0 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12">
                 
                 <div className="w-full overflow-hidden max-h-[300px] sm:max-h-[430px] rounded-[4px]">
-                    <img 
-                        className="w-full"
-                        src="/julia.webp"
-                        alt="Hi! It me, Julia"
-                    />
+                <picture>
+                    <source srcSet="/julia_l.webp" media="(min-width: 1200px)" />
+                    <source srcSet="/julia_m.webp" media="(min-width: 768px)" />
+                    <source srcSet="/julia_s.webp" />
+                    <img src="/julia_m.webp" alt="Hi! It me, Julia" className="w-full" />
+                </picture>
                 </div>
         
                 <div className="w-full">

@@ -1,12 +1,17 @@
 import React from 'react';
 import BlogPost from './Template.tsx'
-import image from './images/lambert_long.webp'
+import image_s from './images/lambert_long_s.webp'
+import image_m from './images/lambert_long_m.webp'
+import image_l from './images/lambert_long_l.webp'
 import './blog.css'
 
 const Content = () => (
-    <div className=' flex justify-center mt-10 sm:max-w-[70%] sm:mx-auto'>
-        <img src={image} alt="Compilation of covers from the magazine"/>
-    </div>
+        <picture>
+            <source srcSet={image_l} media="(min-width: 1200px)" />
+            <source srcSet={image_m} media="(min-width: 768px)" />
+            <source srcSet={image_s} media="(max-width: 767px)" />
+            <img src={image_m} alt="Compilation of covers from the magazine" className="flex justify-center mt-10 sm:max-w-[70%] sm:mx-auto" />
+        </picture>
 )
 
 const Description = () => (
