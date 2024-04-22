@@ -4,27 +4,21 @@ import './global.css'
 
 import embassy_s from './images/embassy_s.webp'
 import embassy_m from './images/embassy_m.webp'
-import embassy_l from './images/embassy_l.webp'
 
 import newonce_s from './images/newonce_s.webp'
 import newonce_m from './images/newonce_m.webp'
-import newonce_l from './images/newonce_l.webp'
 
 import bocconi_s from './images/bocconi_s.webp'
 import bocconi_m from './images/bocconi_m.webp'
-import bocconi_l from './images/bocconi_l.webp'
 
 import goremote_s from './images/goremote_s.webp'
 import goremote_m from './images/goremote_m.webp'
-import goremote_l from './images/goremote_l.webp'
 
 import city_s from './images/city_s.webp'
 import city_m from './images/city_m.webp'
-import city_l from './images/city_l.webp'
 
 import penguin_s from './images/penguin_s.webp'
 import penguin_m from './images/penguin_m.webp'
-import penguin_l from './images/penguin_l.webp'
 
 
 type ThingProps = {
@@ -52,7 +46,6 @@ const Thing: React.FC<ThingProps> = ({ intro, title, description, image, last=fa
             </div>
             <div className="hidden md:flex md:w-1/2">
                 <picture>
-                    <source srcSet={image[2]} media="(min-width: 1200px)" />
                     <source srcSet={image[1]} media="(min-width: 768px)" />
                     <source srcSet={image[0]} media="(max-width: 767px)" />
                     <img src={image[1]} alt={title} className="object-cover h-full w-[100%] pl-20" />
@@ -76,21 +69,21 @@ const Experience = () => {
                        title='Media and Public Diplomacy Specialist'
                        description='In my work at the Polish Embassy, I curate, schedule, and produce content, including 
                        written and video formats, all with our target audience of 700,000 Poles based in the UK in mind.'
-                       image={[embassy_s, embassy_m, embassy_l]} />
+                       image={[embassy_s, embassy_m]} />
 
                 <Thing intro='newonce, 2021-2022'
                        title='Communications & Subscription Assistant'
                        description='newonce is a media platform born out of an organic passion for urban culture. 
                        It documents and comments on the surrounding reality and social dynamics through the prism 
                        of pop culture or lifestyle.'
-                       image={[newonce_s, newonce_m, newonce_l]} />
+                       image={[newonce_s, newonce_m]} />
 
                 <Thing intro="Bocconi University, 2021-2023"
                        title="MSc in Economics and Management of Arts, Culture, Media, and Entertainment"
                        description='At Bocconi, I focused on arts, culture, media, and entertainment management. 
                        By majoring in Media, I gained hands-on expertise in digital innovation and cultural policy 
                        in the creative industries.' 
-                       image={[bocconi_s, bocconi_m, bocconi_l]}/>
+                       image={[bocconi_s, bocconi_m]}/>
                 
                 <Thing intro="GoRemote, 2021-2022"
                        title="Junior Production Assistant"
@@ -98,20 +91,20 @@ const Experience = () => {
                        more efficient, collaborative, and intelligent event management. I assisted events such 
                        as ChangeNOW (sustainability conference), the Paris Peace Forum, and the FIBA (International 
                        Basketball Federation) Congress.' 
-                       image={[goremote_s, goremote_m, goremote_l]}/>
+                       image={[goremote_s, goremote_m]}/>
 
                 <Thing intro="City, University of London, 2018-2021"
                        title="BA Journalism"
                        description='A three-year course that taught me vital skills in news reporting, investigative 
                        journalism, and multimedia storytelling. At City, I gained hands-on experience in real-world 
                        newsrooms, achieving First Class Honours.' 
-                       image={[city_s, city_m, city_l]}/>
+                       image={[city_s, city_m]}/>
 
                 <Thing intro="Penguin Random House, 2019"
                        title="Publicity and Marketing Intern"
                        description='At Penguin, I interned at the Vintage imprint. It publishes thought-provoking, 
                        unforgettable, beautifully designed books, from contemporary trail-blazers to the red-spine classics.' 
-                       image={[penguin_s, penguin_m, penguin_l]}
+                       image={[penguin_s, penguin_m]}
                        last={true}/>
             
             </div>
