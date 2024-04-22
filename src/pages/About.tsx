@@ -8,6 +8,9 @@ const About = () => {
             <>
             <div className="font-aptos w-full pt-[5%] pr-[10%] xs:pr-0 sm:pr-0 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12">
                 
+                <link rel="preload" href='/julia_l.webp' as="image" type="image/webp" media="(min-width: 1200px)" />
+                <link rel="preload" href='/julia_m.webp' as="image" type="image/webp" media="(min-width: 768px)" />
+                <link rel="preload" href='/julia_s.webp' as="image" type="image/webp" media="(max-width: 767px)" />
                 <div className="w-full overflow-hidden max-h-[300px] sm:max-h-[430px] rounded-[4px]">
                 <picture>
                     <source srcSet="/julia_l.webp" media="(min-width: 1200px)" />
