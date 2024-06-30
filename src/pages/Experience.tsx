@@ -50,25 +50,25 @@ const Experience = () => {
                 <Thing
                     intro={`School of Slavonic and East European Studies, UCL, 2023-Present`}
                     title={`MA Political Analysis (Russia and Eastern Europe)`}
-                    description={`In my master’s degree I focus on Russia and Eastern Europe. I gained a thorough grounding in research methods, such as statistical analysis, interviewing, ethnography, and discourse analysis. My other modules included sociology, sexuality and gender studies, and intermediate Russian. My dissertation is on civic participation in Poland. Outside of my studies, I worked at Students’ Union UCL as a Representation Assistant. I helped build a community of motivated Academic Reps through effective and engaging communication.`}
+                    description={`In my master’s degree, I focus on Russia and Eastern Europe. I gained a thorough grounding in research methods, such as statistical analysis, interviewing, ethnography, and discourse analysis. My other modules included sociology, sexuality and gender studies, and intermediate Russian. My dissertation is on civic participation in Poland. Outside of my studies, I worked at Students’ Union UCL as a Representation Assistant. I helped build a community of motivated Academic Reps through effective and engaging communication.`}
                     />
 
                 <Thing
                     intro={`King’s College London, 2022-2023`}
                     title={`Research Assistant`}
-                    description={`I worked on two research projects focused on Poland. In one, I conducted seven semi-structured interviews about Poles’ attitudes towards Ukrainians refugees. In the other, I worked on political responses to violence against women. I conducted a discourse analysis of Polish parliamentary debates and analysed relevant policy.`}
+                    description={`I worked on two research projects focused on Poland. In one, I conducted seven semi-structured interviews about Poles’ attitudes towards Ukrainian refugees. In the other, I worked on political responses to violence against women. I conducted a discourse analysis of Polish parliamentary debates and analysed relevant policy.`}
                     />
 
                 <Thing
                     intro={`King’s College London, 2020-2023`}
                     title={`BA European Politics`}
-                    description={`At KCL, I gained a thorough understanding of European institutions and integration. I took modules in comparative politics, foreign policy analysis, and sociology. I also spent a semester abroad at the University of British Columbia, where I took modules in gender studies and democratisation. I co-authored a 20-page report on academic freedom in Belarus for, that aimed to advice on advocacy strategy recommendations for Scholars at Risk. In my final year, I also worked at King’s Students’ Union as a Communications Assistant.`}
+                    description={`At KCL, I gained a thorough understanding of European institutions and integration. I took modules in comparative politics, foreign policy analysis, and sociology. I also spent a semester abroad at the University of British Columbia, where I took modules in gender studies and democratisation. I co-authored a 20-page report on academic freedom in Belarus that aimed to advice on advocacy strategy recommendations for Scholars at Risk. In my final year, I also worked at King’s Students’ Union as a Communications Assistant.`}
                     />
 
                 <Thing
                     intro={`Warsaw Security Forum, 2022`}
                     title={`Media Liaison`}
-                    description={`As the Media Liaison at one of the largest international security conferences in Central and Eastern Europe I was an integral part of the media team. I arranged interviews between senior politicians and journalists, and managed near-live social media coverage, with over 160 tweets over two days.`}
+                    description={`As the Media Liaison at one of the largest international security conferences in Central and Eastern Europe, I was an integral part of the media team. I arranged interviews between senior politicians and journalists, and managed near-live social media coverage, with over 160 tweets over two days.`}
                     />
 
                 <Thing

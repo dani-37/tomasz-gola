@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-image: url(../public/paper.png);
+  background-image: url(/public/paper.png);
   background-size: cover;
   background-repeat: repeat;
   background-position: center; 
@@ -82,7 +82,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(../public/paper.png);
+  background-image: url(/public/paper.png);
   background-size: cover; 
   background-repeat: repeat; 
   background-position: center;
@@ -101,7 +101,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(../public/paper.png); 
+  background-image: url(/public/paper.png); 
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center; 
