@@ -1,48 +1,46 @@
+
 import React from 'react';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import './global.css'
 
 const About = () => {
         return (
             <>
-            <div className="font-aptos w-full pt-[5%] pr-[10%] xs:pr-0 sm:pr-0 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12">
+            <div className="w-full pt-[5%] flex flex-col sm:flex-row sm:gap-12 z-40">
                 
-                <link rel="preload" href='/julia_m.webp' as="image" type="image/webp" media="(min-width: 768px)" />
-                <link rel="preload" href='/julia_s.webp' as="image" type="image/webp" media="(max-width: 767px)" />
-                <div className="w-full overflow-hidden max-h-[300px] sm:max-h-[430px] rounded-[4px]">
+                <link rel="preload" href='/tomasz.jpeg' as="image" type="image/webp"/>
+                <div className="sm:w-1/2 overflow-hidden max-h-[340px] sm:max-h-[430px] rounded-[4px] z-10">
                 <picture>
-                    <source srcSet="/julia_m.webp" media="(min-width: 768px)" />
-                    <source srcSet="/julia_s.webp" />
-                    <img src="/julia_m.webp" alt="Hi! It me, Julia" className="w-full" />
+                    <source srcSet="/tomasz.jpeg"/>
+                    <img src="/tomasz.jpeg" alt="Hi! This is me, Tomek" className="w-full" />
                 </picture>
                 </div>
         
-                <div className="w-full">
-                    <header className="font-bold text-4xl pb-10">
-                        I tell impactful stories through digital media
+                <div className="sm:w-1/2 pt-10 sm:pt-0">
+                    <header className="text-4xl pb-10 text-r font-medium">
+                        Uncovering the dynamics of civic participation
                     </header>
 
-                    <div className='font-thin text-sm'>
+                    <div className='text-[15px] z-10 font-title'>
                         <p className="pb-5">
-                            Hi! I'm Julia. I have always been fascinated by different media and how they can be used to enhance stories. Through my professional and personal projects, I have explored many media forms, giving me a thorough overview of what can be done. 
+                        Why do people protest? What drives social movements? These questions have been the focus of my academic journey. 
                         </p>
             
-                        <p className="pb-5">
-                            Because of this, I am deeply rooted in the creative industry. Apart from the experience you can read about below, I dove deeper into these fields during my degrees in Journalism and Management of Arts & Culture. I bring a distinctive perspective to my work, blending creativity with strategic communications and management.
+                        <p className="pb-4">
+                        Civic activism is moving masses around the globe and having a real impact on policymakers. My own research focuses on understanding how civil society organisations advance fundamental rights and civic engagement.
                         </p>
-            
-                        <p className="pb-0">
-                           I curate projects and campaigns about important world issues through art, music, the written word, and emerging media. I am particularly interested in gender equality, climate change action, and access to education. It's when I get to combine these topics with creative storytelling that I do my best work.
+
+                        <p className="pb-2">
+                        I am interested in civic participation, social movements and civil society, and LGBT politics. My current research focuses on the relationship between civic activism and electoral participation in Poland.
                         </p>
             
                         <div className="flex flex-row space-x-1">
-                        <a href="https://www.linkedin.com/in/juliaoprzondek/" aria-label='Connect with me on LinkedIn' target='_blank' rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                            <LinkedInIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', mr:0.5, cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
+                        <a className='text-r' href="https://www.linkedin.com/in/tomaszgola1" aria-label='Connect with me on LinkedIn' target='_blank' rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                            <LinkedInIcon sx={{ mt:2, width:'1.5rem', opacity:0.6, mr:0.5, cursor:'pointer', transition:'all 0.5s ease', '&:hover':{opacity:1}}} />
                         </a>
 
-                        <a href="mailto:oprzondek.julia@gmail.com" aria-label='Drop me an email' style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                            <AlternateEmailIcon sx={{ color:'#3E5760', mt:2, width:'1.5rem', height:'2.25rem', cursor:'pointer', '&:hover':{color:'#30434a', transition:'all 0.3s ease'}}} />
+                        <a className='text-r' href="mailto:tomasz.b.gola@gmail.com" aria-label='Drop me an email' style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                            <AlternateEmailIcon sx={{ mt:2, width:'1.5rem', opacity:0.6, cursor:'pointer', transition:'all 0.5s ease', '&:hover':{opacity:1}}} />
                         </a>
                         </div>
                     </div>

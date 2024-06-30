@@ -1,107 +1,104 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import './global.css'
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-import lambert_s from './images/lambert_s.webp'
-import lambert_m from './images/lambert_m.webp'
+import diss from './images/diss.png'
+import podcast from './images/podcast.png'
+import report from './images/report.png'
+import article from './images/article.png'
 
-import sso_s from './images/sso_s.webp'
-import sso_m from './images/sso_m.webp'
+const Proj = ({ title, description, image, link, id, hovered, setHovered, upcoming=false }) => {
 
-import drag_s from './images/drag_s.webp'
-import drag_m from './images/drag_m.webp'
-
-import language_s from './images/language_s.webp'
-import language_m from './images/language_m.webp'
-
-import newonce_s from './images/newonce_p_s.webp'
-import newonce_m from './images/newonce_p_m.webp'
-
-import punk_s from './images/punk_s.webp'
-import punk_m from './images/punk_m.webp'
-
-
-const Proj = ({ title, description, image, link }) => {
-
-    //makes sure the page is scrolled up
     const { ref, inView } = useInView({
         triggerOnce: true,
         rootMargin: '0px 0px', 
     });
-    
+
     return (
-        <Link to={`./blog/${link}`} aria-label={`Go to my ${title} article`} ref={ref} style={{ textDecoration: 'none', color: 'inherit' }} className= {`transition-all duration-500 ${inView ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}>
-            <div className="relative font-aptos w-full cursor-pointer group overflow-hidden rounded-[4px]">
+        <a  href={link} target={`${!upcoming && '_blank'}`}
+            className={`${inView ? `translate-x-0 opacity-100 ${hovered > 0 && hovered !== id && 'blur-[2px]'}` : '-translate-x-1/2 opacity-0 blur-sm'} 
+                transition-all w-full flex gap-4 p-2 cursor-pointer shadow group rounded-[4px] border-b border-l border-gray-400 group`}
+             ref={ref}
+             style={{ transition: `transform ${300 + 200 * id}ms, opacity ${300 + 200 * id}ms, filter 300ms` }}
+             onMouseEnter={() => inView && setHovered(id)}
+             onMouseLeave={() => setHovered(0)}
+             >
+
+            <div className='w-1/4 p-1'>
                 <picture>
-                    <source srcSet={image[1]} media="(min-width: 768px)" />
-                    <source srcSet={image[0]} media="(max-width: 767px)" />
-                    <img src={image[1]} alt={title} className="w-full h-auto max-h-full rounded-[4px] transition-opacity ease-in-out group-hover:opacity-75" />
+                    <source srcSet={image} media="(min-width: 768px)" />
+                    <img src={image} alt={title} className="w-full max-h-full rounded-[4px]" />
                 </picture>
-
-                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 text-white text-center rounded-[4px] p-8 opacity-0 group-hover:opacity-100 flex flex-col justify-center transition-opacity duration-[150ms] ease-in-out">
-                    <header className="pb-2 text-[1.1rem]">
-                        {title}
-                    </header>
-
-                    <p className=" font-thin text-sm px-6">
-                        {description}
-                    </p>
-                    
-                    <div>
-                        <div className="inline-block border border-white px-3 py-1 text-xs rounded-[4px] text-[0.7rem] font-mono hover:bg-w hover:bg-opacity-10 duration-100">
-                            READ MORE
-                        </div>
-                    </div>
-                </div> 
             </div>
-        </Link>
+
+            <div className="w-3/4 h-full flex flex-col pr-1" style={{transition: 'all 0.3s ease'}}>
+                <header className="pb-2 text-[1.1rem] font-medium text-r">
+                    <span>
+                        {title}
+                        
+                        {!upcoming && <ArrowOutwardIcon className="ml-1 hover-effect-icon" sx={{ fontSize: '14px' }} />}
+
+                        {upcoming && 
+                            <span className='ml-1 text-mono text-xs border border-r rounded-md max-w-min p-1 opacity-60'>
+                                SOON
+                            </span> }
+                    </span>
+                </header>
+            
+                <p className="text-sm text-gray-600 pb-1">
+                    {description}
+                </p>
+            </div> 
+        </a>
     );
 };
 
 
-
 const Projects = () => {
+    const [ hovered, setHovered ] = useState(0)
+
     return (
-        <>
-            <header className="sm:pt-24 pt-16 font-bold text-4xl text-white">
-                Projects
-            </header>
+        <div className="sm:grid sm:grid-cols-2 md:grid-cols-2 sm:gap-8 justify-between space-y-6 sm:space-y-0">
+            <Proj
+                id={1}
+                title={`Impacts of Poland's Women Strike`}
+                description={`Undregraduate dissertation on the effects the pro-abortion movement had on people's understanding of civicness and the abortion discourse.`}
+                image={diss}
+                link={`${process.env.PUBLIC_URL}/dissertation.pdf`} 
+                hovered={hovered}
+                setHovered={setHovered}
+            />
+            
+            <Proj
+                id={2}
+                title={`Russian dissinformation tactics `}
+                description={`A research report for the Casimir Pulaski Foundation on the channels of Russian disinofrmaiton about Poland during the war in Ukraine.`}
+                image={report}
+                link='https://pulaski.pl/en/poland-as-depicted-in-russian-federations-official-communication-in-the-first-months-of-the-war-in-ukraine-february-24th-july-2022-2/'
+                hovered={hovered}
+                setHovered={setHovered}
+            />
 
-            <div className="flex flex-col sm:flex-row sm:space-x-2.5 space-y-2.5 sm:space-y-0 pt-4 pb-2.5 sm:pb-2.5 mr-[10%] sm:mr-0 justify-between">
-                <Proj title='The Lambert'
-                      description='Graphic design project for an online magazine'
-                      image={[lambert_s, lambert_m]}
-                      link='lambert'/>
+            <Proj
+                id={3}
+                title={`Call My Supervisor: A PhD Podcast `}
+                description={`A podcast with KCL School of Politics and Economics doctoral students about their research. `}
+                image={podcast}
+                link='https://open.spotify.com/episode/48o9d9Ph1a8AABIF27eU6H?si=f0b8f2ae7af1457a'
+                hovered={hovered}
+                setHovered={setHovered}
+            />
 
-                <Proj title='She Sounds Off'
-                      description='Creating a space for female voices on Islington Radio'
-                      image={[sso_s, sso_m]}
-                      link='sso'/>
-
-                <Proj title='newonce'
-                      description='Media platform focusing on music, lifestyle, and urban culture'
-                      image={[newonce_s, newonce_m]}
-                      link='newonce'/>
-            </div>
-
-            <div className="flex flex-col sm:flex-row sm:space-x-2.5 space-y-2.5 sm:space-y-0 mr-[10%] sm:mr-0 pb-20 sm:pb-28">
-                <Proj title='What even is punk?'
-                      description='A deep dive into punk culture and its community 50 years later'
-                      image={[punk_s, punk_m]}
-                      link='punk'/>
-
-                <Proj title='Drag queens and social media'
-                      description='Profile of London and the evolution of drag culture'
-                      image={[drag_s, drag_m]}
-                      link='drag'/>
-
-                <Proj title='Polish Language Campaign'
-                      description='Organic social media campaign for the Polish Embassy'
-                      image={[language_s, language_m]}
-                      link='language'/>
-            </div>
-        </>
+            <Proj
+                id={4}
+                title={`Poland Queer Capital. What can we learn from Poznań? `}
+                description={`An article for The Loop on fostering inclusive queer spaces through local activism. `}
+                image={article}
+                hovered={hovered}
+                setHovered={setHovered}
+                upcoming={true}
+            />
+        </div>
     );
 };
 
