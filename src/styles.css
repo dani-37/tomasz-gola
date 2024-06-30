@@ -33,7 +33,7 @@ html {
   bottom: -2px;
   left: 50%;
   background: gray;
-  background-image: url(../public/grainy.jpg);
+  background-image: url(/public/grainy.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   mix-blend-mode:color-burn;
@@ -52,7 +52,7 @@ html {
   display: inline-block;
   color: transparent;
   background-image: 
-    url(../public/grainy.jpg),
+    url(/public/grainy.jpg),
     linear-gradient(rgb(177, 168, 168), rgb(151, 133, 133)); 
   background-clip: text;
   -webkit-background-clip: text;
