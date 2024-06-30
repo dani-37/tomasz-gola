@@ -12,6 +12,33 @@
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon.svg">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preload" href="%PUBLIC_URL%/tomasz.jpeg" as="image" type="image/jpeg"/>
+    <link rel="preload" href="%PUBLIC_URL%/paper.png" as="image" type="image/png"/>
+
+    <style>
+      .App {
+        background-color: #f5f5f5; 
+        position: relative; 
+      }
+
+      .App::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(/paper.png);
+        background-size: cover; 
+        background-repeat: repeat; 
+        background-position: center;
+        opacity: 0.3;
+        pointer-events: none; 
+      }
+    </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <title>Tomasz Gola</title>
   </head>
