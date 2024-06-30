@@ -59,7 +59,6 @@ html {
   pointer-events: none; 
 }
 
-
 .group .hover-effect-icon {
   transition: transform 0.1s ease;
   transform: translate(0, 0);
@@ -68,5 +67,4 @@ html {
 .group:hover .hover-effect-icon {
   transform: translate(0.15rem, -0.15rem);
   transition: transform 0.1s ease;
-
 }
