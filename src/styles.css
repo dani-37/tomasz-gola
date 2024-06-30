@@ -6,14 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-  background-image: url(/public/paper.png);
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center; 
-  background-attachment: fixed; 
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 .thing-enter {
