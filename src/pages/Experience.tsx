@@ -20,7 +20,7 @@ const Thing: React.FC<ThingProps> = ({ intro, title, description }) => {
     return (
         <div 
         ref={ref} 
-        className={`pb-20 flex flex-col md:flex-row items-start transition-all duration-500 
+        className={`pb-20 flex flex-col md:flex-row items-start transition-all duration-500  -mr-16 sm:mx-0
                 ${inView ? 'translate-y-0' : 'translate-y-24 opacity-0'}`}>
             <div className="absolute -left-[22px] w-6 border border-r rounded-r-lg  bg-w z-20" /> 
             <div className="flex flex-col items-start">
@@ -43,7 +43,7 @@ const Experience = () => {
 
     return (
         <>
-        <div className="container scroll-container mt-20">
+        <div className="container scroll-container mt-20 -mx-10 -mr-20 sm:mx-0">
             <div ref={ref} className={`circle ${inView ? 'grow-donut' : ''}`}/>
             <div className={`line ${inView ? 'line-grow' : ''}`}/>
             <div className='exp-container'>

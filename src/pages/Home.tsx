@@ -30,7 +30,7 @@ export default function HomePage() {
           <div id='contact' className='relative scroll-mt-[67px] pb-4 pt-20'>
             <section className={`${mxLogic}`}>
               <Contact/>
-              <div className="abslute pr-[10%] sm:pr-0 text-sm mx-auto text-right text-r font-aptos">
+              <div className="abslute text-sm mx-auto text-right text-r font-aptos">
                 Website by   
                 <a href="https://www.linkedin.com/in/dvegarabalsa/" aria-label='LinkedIn page of the web developer' target="_blank" rel="noopener noreferrer" className="font-bold pl-1">
                      Daniel Vegara

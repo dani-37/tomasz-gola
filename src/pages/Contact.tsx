@@ -15,7 +15,7 @@ const Contact = () => {
                 
                 <AlternateEmailIcon sx={{ color: '#604537', mr: 3, width: '1.8rem', height: '2.25rem', cursor: 'pointer' }} />
                 
-                <header className='text-3xl cursor-pointer'>
+                <header className='text-xl sm:text-3xl cursor-pointer'>
                     tomasz.b.gola@gmail.com
                 </header>
             </a>
@@ -29,7 +29,7 @@ const Contact = () => {
                 
                 <LinkedInIcon sx={{ color: '#604537', mr: 3, width: '1.8rem', height: '2.25rem', cursor: 'pointer' }} />
                 
-                <header className='text-3xl cursor-pointer'>
+                <header className='text-xl sm:text-3xl cursor-pointer'>
                     tomaszgola1
                 </header>
             </a>
@@ -43,7 +43,7 @@ const Contact = () => {
                 
                 <FileOpenIcon sx={{ color: '#604537', mr: 3, width: '1.8rem', height: '2.25rem', cursor: 'pointer' }} />
                 
-                <header className='text-3xl cursor-pointer'>
+                <header className='text-xl sm:text-3xl cursor-pointer'>
                     cv.pdf
                 </header>
             </a>
