@@ -72,7 +72,7 @@ const Projects = () => {
             <Proj
                 id={2}
                 title={`Russian dissinformation tactics `}
-                description={`A research report for the Casimir Pulaski Foundation on the channels of Russian disinofrmaiton about Poland during the war in Ukraine.`}
+                description={`A research report for the Casimir Pulaski Foundation on Russian disinformation about Poland during the war in Ukraine.`}
                 image={report}
                 link='https://pulaski.pl/en/poland-as-depicted-in-russian-federations-official-communication-in-the-first-months-of-the-war-in-ukraine-february-24th-july-2022-2/'
                 hovered={hovered}
@@ -82,7 +82,7 @@ const Projects = () => {
             <Proj
                 id={3}
                 title={`Call My Supervisor: A PhD Podcast `}
-                description={`A podcast with KCL School of Politics and Economics doctoral students about their research. `}
+                description={`A podcast with KCL School of Politics and Economics doctoral students about their research.`}
                 image={podcast}
                 link='https://open.spotify.com/episode/48o9d9Ph1a8AABIF27eU6H?si=f0b8f2ae7af1457a'
                 hovered={hovered}
@@ -92,7 +92,7 @@ const Projects = () => {
             <Proj
                 id={4}
                 title={`Poland Queer Capital. What can we learn from Poznań? `}
-                description={`An article for The Loop on fostering inclusive queer spaces through local activism. `}
+                description={`An article for The Loop on fostering inclusive queer spaces through local activism.`}
                 image={article}
                 hovered={hovered}
                 setHovered={setHovered}
